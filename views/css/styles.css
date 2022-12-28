@@ -278,6 +278,55 @@ code {
 a > code {
   color: inherit;
 }
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  
+  
+}
+.form-inline input {
+  
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 35px;
+  width: 200px;
+  line-height: 40px
+  font-size: 16px;
+}
+.form-inline button {
+  
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  color: white;
+  height: 40px;
+  width: 100px;
+  line-height: 18px
+
+  
+}
+/* .form-inline input {
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  color: white;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 40px;
+} */
+
 
 kbd {
   padding: 0.2rem 0.4rem;
@@ -603,6 +652,7 @@ progress {
   height: auto;
 }
 .navbar-brand img {
+  padding: 2%;
   width: 50px;
   height: 50px;
 }
