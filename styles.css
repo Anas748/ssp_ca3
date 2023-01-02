@@ -139,8 +139,6 @@ body h1 {
   border-radius: 10px 10px 10px 10px
 }
 
-
-
 @media screen and (max-width: 992px) {
   body {
     background-color: white;
@@ -186,9 +184,6 @@ body h1 {
     width: 60%;
     text-align: center;
     border-radius: 5px; 
-    
-    
-
   }
   body h1{
     font-size: 5vw;
