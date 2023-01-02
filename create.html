@@ -7,24 +7,24 @@
   <link rel="icon" type="image/x-icon" href="/assets/blogger.ico" />
 </head>
 <body>
-
   <nav>
-    <h1>All Blogs</h1>
+    <div class="navlogo">
+       <a href="#"><img src="/assets/blog.png" alt="logo"> </a>
+    </div>
     <div class="navLinks">
       <ul>
-       <a href="/index.html">Home</a>
-       <a href="/details.html"> About us</a>
-       <a href="/create.html">Add a new blog</a>
+       <a href="index.html">Home</a>
+       <a href="details.html"> About us</a>
+       <a href="create.html">Add a new blog</a>
       </ul>
     </div>
   </nav>
-  <form class="search">
-    <input type="text" name="term" placeholder="search term">
-    <button type="submit">Search</button>
+  <h1>Create a New Blog</h1>
+  <form>
+    <input type="text" name="title" required placeholder="Blog title">
+    <textarea name="body" required placeholder="Blog body"></textarea>
+    <button>Create</button>
   </form>
-  <div class="blogs">
-    <!-- inject blogs here from js -->
-  </div>
-  <script src="js/index.js"></script>
+  <script src="create.js"></script>
 </body>
 </html>
