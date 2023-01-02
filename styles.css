@@ -1,105 +1,137 @@
-font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/* base styles */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-header{
-    background: #ffffff ;
-    box-shadow: 0 10px 10px -10px rgba(35,35,38,0.1);
-}
-#menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 15px;
-    position: relative;
-}
-.logo img{
-    max-width: 80px;
-    display: block;
-}
-#menu ul li{
-    display: inline-block;
+
+body {
+  background: rgb(247, 245, 245);
+  font-family: 'Roboto';
+  color: #444;
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+
 
 }
-#menu ul li a{
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #111111;
-    padding: 13px 0;
-    position: relative;
-    transition: 0.4s ease;
-}  
-#menu ul li:not(:last-child) a{
-    margin-right: 18px;
+
+nav {
+  background-color: #D69425;
+
 }
-#menu ul li:hover a{
-    color: #D69425;
+
+nav h1 {
+  text-align: left;
+  margin: 2%;
+
+
+
 }
-#menu ul li a ::after{
-    content: "";
-    position: absolute;
-    bottom : 10px;
-    width:100%;
-    left: 0;
-    height: 2px;
-    background-color: #D69425;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.4s ease;
+
+nav a {
+
+  color: rgb(235, 226, 226);
+  display: inline-block;
+  text-decoration-style: solid;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 13px 40px;
+  position: relative;
+  transition: 0.4s ease;
 }
-#menu ul li:hover a::after{
-    opacity: 1;
-    visibility: visible;
-    bottom: 0;
+
+nav img {
+  max-width: 40px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
 }
-#menu input{
-    display: none;
+
+.navLinks {
+  text-align: left;
+  background-color: rgb(22, 21, 21);
+  height: 50px;
 }
-#menu label{
-    display: none;
+
+.navLinks ul:hover a::after {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
 }
-@media only screen and (max-width: 767px){
-#menu label{
-    display: block;
-    }
-#menu label::before{
-    content: "\2261";
-    font-size: 44px;
+
+.navLinks ul:hover a {
+  color: #D69425;
 }
-#menu ul{
-        position: absolute;
-        top: 100%;
-        background: #ffffff;
-        right: 0;
-        left: 0;
-        z-index: 3;
-        height: calc(100vh - 100px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(0);
-        transition: 0.6s ease;
-    }
-    #menu inpur:checked + lable::before{
-        content: "\00d7";
-    }
-    #menu input:checked ~ ul{
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-    }
+
+.navLinks ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: #D69425;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+}
+
+form {
+  max-width: 400px;
+}
+
+form input {
+  width: 100%;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 16px 0;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #D69425;
+  font-family: 'Roboto';
+  background-color: rgb(153, 148, 148);
+}
+
+form button {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  background: #D69425;
+  border: 1px solid #2e2d2b;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+/* post list */
+.post {
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.post h2 {
+  margin: 0;
+}
+
+.post p {
+  margin-top: 0;
+}
+
+.post a {
+  color: #36cca2;
+}
+
+body h1 {
+  background-attachment: fixed;
+  background-color: #ebaf49;
+  font-family: 'Oswald';
 }
