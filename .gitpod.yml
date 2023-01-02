@@ -1,2 +1,2 @@
 tasks:
-  - init: npm i http path express fs xslt-processor xml2js && node index.js
+  - init: npm install -g json-server
