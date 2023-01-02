@@ -18,6 +18,10 @@ nav ul{
   display: flex;
   justify-content: space-around;
 }
+div span{
+  display: flex;
+  align-items: center;
+}
 nav h1 {
   text-align: center;
 }
@@ -29,6 +33,9 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
 }
+nav .navlogo{
+  display: flex;
+}
 
 nav img {
   max-width: 40px;
@@ -38,7 +45,7 @@ nav img {
 }
 
 
-/* 
+
 .navLinks ul:hover a::after {
   opacity: 1;
   visibility: visible;
@@ -46,7 +53,7 @@ nav img {
 }
 
 .navLinks ul:hover a {
-  color: #D69425;
+  color: #2e2d2b;
 
 }
 
@@ -54,18 +61,21 @@ nav img {
 
   width: 100%;
   height: 1px;
-  background-color: #D69425;
+  background-color: #2e2d2b;
   opacity: 0;
   visibility: hidden;
   transition: 0.2s ease;
-} */
+}
 
 form {
-  max-width: 400px;
+  max-width: 300px;
+
 }
 
 form input {
   width: 100%;
+  border-radius: 55px 55px 55px 55px / 48px 48px 48px 48px; 
+  border: 2px solid rgb(235, 226, 226); 
 }
 
 input,
@@ -87,10 +97,14 @@ form button {
   border: 1px solid #2e2d2b;
   outline: none;
   transition: 1s ease-in-out;
+  border-radius: 55px 55px 55px 55px / 48px 48px 48px 48px; 
+  border: 2px solid rgb(235, 226, 226); 
 }
 
 textarea {
   min-height: 200px;
+  border-radius: 19px 19px 19px 19px; 
+  border: 2px solid rgb(235, 226, 226); 
 }
 
 /* post list */
@@ -117,6 +131,7 @@ body h1 {
   
   background-color: #ebaf49;
   font-family: 'Oswald';
+  border-radius: 10px 10px 10px 10px
 }
 
 
